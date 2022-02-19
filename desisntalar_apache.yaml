@@ -1,0 +1,6 @@
+---
+- hosts: webservers
+  become: yes
+  tasks:
+          - name: DESINSTALAR APACHE2
+            apt: name=apache2 update_cache=yes state=absent
